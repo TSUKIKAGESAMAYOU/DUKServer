@@ -1,0 +1,104 @@
+<!DOCFILE html>
+<html>
+  <title>Welcome to Group 1!</title>
+  <header>
+    <fieldset>
+      <img id="titlejpg" class="fullscreen" src="pictureformain/0.jpg" onclick="cPicture()" alt="Group1"/>
+    </fieldset>
+    <b><h1 align="center">Welcome here. You should <mark>login</mark> first.</h1></b>
+  </header>
+
+  <body>
+    <p id="timeset"></p>
+    
+    <article>
+      <h3>Welcome to Group 2!</h3>
+      <ul>
+        <li><a href="html/readit.html">Hello! Here is something about it!</a></li>
+        <li>If you see this, your network is good!</li>
+      </ul>
+      <form name="testform" id="testform" action="/html/upload.pl" method="post" autofocus>
+        <input name="testinput" id="testinput" type="text" class="inputbox"></input>
+      </form>
+    </article>
+
+    <details close>
+      <summary>Downloads</summary>
+      <strong><ul>
+        <li><a href="html/downloadpicture.html">Download some picture about dumplings!</a></li>
+        <li><a href="html/dynamic.pl">Try Perl dynamic page!</a></li>
+      </ul></strong>
+    </details>
+    <br/>
+    <strong style="font-color:#fff;background-color:#0ff;border:2px solid #000;">Our Activities:</strong>
+    <table cellspacing="0">
+    <tr><th>January (Jan.)</th><th>February (Feb.)</th><th>March (Mar.)</th>
+        <th>April (Apr.)</th>  <th>May (May)</th>      <th>June (Jun.)</th>
+        <th>July (Jul.)</th>   <th>August (Aug.)</th>  <th>September (Sept.)</th>
+        <th>October (Oct.)</th><th>November (Nov.)</th><th>December (Dec.)</th></tr>
+    <tr><td>No daily Mission</td><td>No daily Mission</td><td>No daily Mission</td><td>No daily Mission</td>
+        <td>No daily Mission</td><td>No daily Mission</td><td>No daily Mission</td><td>No daily Mission</td>
+        <td>No daily Mission</td><td>No daily Mission</td><td>No daily Mission</td><td>No daily Mission</td></tr>
+    </table>
+    <br/>
+    <details close>
+      <summary><strong>Our members regulations:</strong></summary>
+      <strong><ol>
+        <li>Be positive and study hard.</li>
+        <li>Stay healthy</li>
+      </ol></strong>
+    </details>
+    <br/>
+    <details close>
+      <summary><strong>These websites are good places to study:</strong></summary>
+      <strong><ol>
+        <li><a href="http://www.w3school.com.cn/">W3C study net</a></li>
+        <li><a href="http://search.cpan.org/">CPAN</a></li>
+      </ol></strong>
+    </strong></details>
+    <br/>
+    <input placeholder="Your string" id="InputBox1" class="inputbox" />
+    <input type="button" onclick="clickIndex()" value="Index" />
+    <input type="button" onclick="clickClear()" value="Clear" />
+    <input type="button" onclick="clickEline()" value="Endline" />
+    <br/><br/>
+    <fieldset>
+      <strong><b>The Out form:</b></strong>
+      <p id="pChange"></p>
+    </fieldset>
+    <br/>
+    <details close>
+      <summary><strong>The technology of <abbr title="Group 1">G1</abbr></strong></summary>
+      <strong><ul>
+        <li><a href="html/calculator.html">Try our JavaScript calculator!</a></li>
+      </ul></strong>
+    </details>
+  </body>
+  <br/>
+
+  <footer align="center">
+    <HR width="98%" color=#555 SIZE=1/>
+    <big>This Webside is made by G1&#169;.</big>
+  </footer>
+
+<link rel="stylesheet" type="text/css" href="CSS-list/auto.css"/>
+<script src="js/main.js" type="text/javascript"></script>
+<script type="text/javascript">
+function startTime()
+{
+  document.getElementById('timeset').innerHTML=
+      "Welcome to <i>Group 1</i>!<b style='color:#0ff;border:2px solid #0f0;'>"+new Date().toString()+"</b>";
+  setTimeout('startTime()',100);
+}
+window.onload=startTime;
+var i=0,autobegin="pictureformain/",autoend=".jpg",s=document.getElementById("titlejpg");
+
+
+function postData(){
+  var myForm = document.getElementById("testform");
+  var myInput = document.getElementById("testinput");
+  
+  myForm.submit();
+}
+</script>
+</html>

@@ -1,0 +1,40 @@
+﻿<!DOCFILE>
+<html>
+  <header><title id="top">Calculator</title></header>
+  <body>
+    <p id="box" style="border:3px dashed #bbb;">0</p>
+    <input type="button" class="button" onclick="start()" value="►start"/>
+    <input type="button" class="button" onclick="stop()"  value="▌▌stop"/>
+    <input type="button" class="button" onclick="end()"   value="▉end"/>
+   <br/>
+    <a href="../main.html">Back to title</a>
+  </body>
+
+  <br/>
+  <footer align="center">
+    <HR width="98%" color=#555 SIZE=1/>
+    <big>This Webside is made by Dumpling_United Kingdom&#169;.</big>
+  </footer>
+
+<link rel="stylesheet" type="text/css" href="../CSS-list/auto.css"/>
+<style>
+  input.button{font-size:3em;height:15%;width:30%;text-align:50% 50%;}
+  p#box{font-size:30px;}
+</style>
+<script>
+  var that=document.getElementById("box"),seconds=0,stops=0;
+  function start(){
+    that.innerHTML=++seconds;
+    if(!stops)
+      setTimeout(start(),1000);
+  }
+  function stop(){
+    stops=!stops;
+  }
+  function end(){
+    stops=1;
+    seconds=0;
+    stops=0;
+  }
+</script>
+</html>

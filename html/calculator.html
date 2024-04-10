@@ -1,0 +1,66 @@
+<!DOCFILE>
+<html>
+  <header>
+    <title id="top">Calculator</title>
+    <img class="fullscreen" src="../picture/big_star.png" />
+  </header>
+  <body><fieldset>
+    <p id="box" style="border:3px dashed #bbb;"></p>
+    <input type="button" class="button" onclick="fin(1)" value="1" />
+    <input type="button" class="button" onclick="fin(2)" value="2" />
+    <input type="button" class="button" onclick="fin(3)" value="3" />
+    <input type="button" class="button" onclick="fin('+')" value="+" />
+    <input type="button" class="button" onclick="fin('(')" value="(" />
+   <br/><br/>
+    <input type="button" class="button" onclick="fin(4)" value="4" />
+    <input type="button" class="button" onclick="fin(5)" value="5" />
+    <input type="button" class="button" onclick="fin(6)" value="6" />
+    <input type="button" class="button" onclick="fin('-')" value="-" />
+    <input type="button" class="button" onclick="fin(')')" value=")" />
+   <br/><br/>
+    <input type="button" class="button" onclick="fin(7)" value="7" />
+    <input type="button" class="button" onclick="fin(8)" value="8" />
+    <input type="button" class="button" onclick="fin(9)" value="9" />
+    <input type="button" class="button" onclick="fin('*')" value="*" />
+    <input type="button" class="button" onclick="fin('.')" value="." />
+   <br/><br/>
+    <input type="button" class="button" onclick="bsbt()" value="<-"/>
+    <input type="button" class="button" onclick="fin(0)" value="0" />
+    <input type="button" class="button" onclick="clrs()" value="C" />
+    <input type="button" class="button" onclick="is()"   value="=" />
+   <br/><br/>
+    <a href="../main.html">Back to title</a>
+  </fieldset></body>
+  <br/>
+  <footer align="center">
+    <HR width="98%" color=#555 SIZE=1/>
+    <big>This Webside is made by Dumpling_United Kingdom&#169;.</big>
+  </footer>
+<link rel="stylesheet" type="text/css" href="../CSS-list/auto.css"/>
+<style>
+  input.button	{font-size:3em;height:12%;width:12%;}
+  p#box		{font-size:30px;}
+</style>
+<script>
+  var str="",that=document.getElementById("box");
+  function fin(Index){
+    str+=Index.toString();
+    that.innerHTML=str;
+  }
+  function bsbt(){
+    str=str.substr(0,str.length-1);
+    that.innerHTML=str;
+  }
+  function clrs(){
+    math1=operator=0;
+    that.innerHTML=str="";
+  }
+  function is(){
+    try{
+      str=that.innerHTML=eval(str);
+    }catch(ex){
+      that.innerHTML="Error!";
+    }
+  }
+</script>
+</html>

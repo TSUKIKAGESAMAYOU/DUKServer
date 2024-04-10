@@ -1,0 +1,24 @@
+html{background-image     :url(1.png);
+     background-attachment:fixed;
+     background-repeat    :no-repeat;
+     background-position  :50% 50%;}
+img.fullscreen{height:100%;width:100%;}
+mark  {background-color:#ff0;}
+li,p  {color:#52f;}
+big   {font-size:1.5em;}
+strong{font-size:1.2em;}
+td    {font-size:0.8em;}
+h1     {font-size:50px;}
+summary{font-size:1.3em;}
+a      {font-color:#0f0;}
+table  {border:1px solid #000;background-color:#f0f;}
+th,td  {border:1px solid #000;}
+th     {background-color:#0ff;}
+fieldset,details,ol,ul{border:3px dashed #bbb;}
+a:link   {color:#000}
+a:visited{color:#999}
+a:hover  {color:#666}
+a:active {color:#fff}
+a#download{background-color:#000;color:#fff;}
+input{color:#0f0;background-color:#000;border:1px #000;front-size:20px;}
+input.inputbox{color:#fff;width:85%;height:20px;}
